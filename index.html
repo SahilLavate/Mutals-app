@@ -300,7 +300,7 @@ Already have an account? Login
 <button onclick="showSection('recommend')">💡 Recommend</button>
 
 <button onclick="showSection('analytics')">📊 Analytics</button>
-
+<button onclick="showSection('portfolio')">💼 Portfolio</button>
 <button onclick="showSection('profile')">👤 Profile</button>
 
 <button onclick="logout()">Logout</button>
@@ -628,6 +628,14 @@ Show Recommendations
 </section>
 
 
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="hidden">
+
+   ...portfolio code...
+
+</section>
+
 <!-- PROFILE -->
 
 <section id="profile" class="hidden">
@@ -756,6 +764,28 @@ aum:"₹18,600 Cr"
 
 ];
 
+let portfolio = [];
+
+function loadPortfolioFunds(){
+...
+}
+
+function addInvestment(){
+...
+}
+
+function updatePortfolio(){
+...
+}
+
+function removeInvestment(){
+...
+}
+
+function calculatePortfolioHealth(){
+...
+}
+
 
 /* LOGIN */
 
@@ -858,6 +888,7 @@ const sections=[
 "lumpsum",
 "recommend",
 "analytics",
+"portfolio",
 "profile"
 ];
 
@@ -1312,6 +1343,8 @@ document.getElementById("loginPage")
 displayHomeFunds();
 
 loadCompare();
+
+loadPortfolioFunds();
 
 </script>
 
