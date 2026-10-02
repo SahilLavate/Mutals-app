@@ -630,9 +630,118 @@ Show Recommendations
 
 <!-- PORTFOLIO -->
 
+<!-- PORTFOLIO -->
+
 <section id="portfolio" class="hidden">
 
-   ...portfolio code...
+  <div class="box">
+
+    <h2>💼 My Portfolio</h2>
+
+    <p style="margin-top:8px;">
+      Add your mutual fund investments to analyze your portfolio.
+    </p>
+
+    <select id="portfolioFund">
+      <option value="">Select Fund</option>
+    </select>
+
+    <input
+      type="number"
+      id="investmentAmount"
+      placeholder="Investment Amount ₹"
+    >
+
+    <button onclick="addInvestment()">
+      ➕ Add Investment
+    </button>
+
+  </div>
+
+
+  <div class="box">
+
+    <h2>📊 Portfolio Summary</h2>
+
+    <div class="cards" style="margin-top:15px;">
+
+      <div class="card">
+        <h3>💰 Total Investment</h3>
+        <div class="big-number" id="totalInvestment">
+          ₹0
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>📈 Estimated Value</h3>
+        <div class="big-number" id="estimatedValue">
+          ₹0
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>📊 Portfolio Return</h3>
+        <div class="big-number" id="portfolioReturn">
+          0%
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>⚠️ Risk Level</h3>
+        <div class="big-number" id="portfolioRisk">
+          -
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="box">
+
+    <h2>📋 My Investments</h2>
+
+    <div
+      id="portfolioList"
+      style="margin-top:15px;"
+    >
+      <p>No investments added yet.</p>
+    </div>
+
+  </div>
+
+
+  <div class="box">
+
+    <h2>❤️ Portfolio Health</h2>
+
+    <div
+      id="portfolioHealth"
+      class="result"
+      style="margin-top:15px;"
+    >
+      Add investments to check portfolio health.
+    </div>
+
+  </div>
+
+
+  <div class="box">
+
+    <h2>🚨 Smart Alerts</h2>
+
+    <div
+      id="portfolioAlerts"
+      style="margin-top:15px;"
+    >
+      <p>No alerts available.</p>
+    </div>
+
+  </div>
 
 </section>
 
